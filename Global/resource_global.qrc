@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Skin/BranchClosed.png</file>
+        <file>Skin/BranchOpen.png</file>
+        <file>Skin/down.png</file>
+        <file>Skin/off.png</file>
+        <file>Skin/on.png</file>
+        <file>Skin/BranchClosedHover.png</file>
+        <file>Skin/BranchOpenHover.png</file>
+        <file>Skin/find.png</file>
+    </qresource>
+</RCC>

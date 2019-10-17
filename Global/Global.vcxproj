@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3ACE7145-88BE-3C2A-9700-6E2EC04F082B}</ProjectGuid>
+    <RootNamespace>Global</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Global</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Globald</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Global</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Globald</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Qt\Qt5.6.0\5.6\msvc2013\include;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtANGLE;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore;release;.;D:\Qt\Qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;GLOBAL_LIBRARY;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Widgets.lib;D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Gui.lib;D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.6.0\5.6\msvc2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Global.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;GLOBAL_LIBRARY;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\Qt\Qt5.6.0\5.6\msvc2013\include;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtWidgets;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtGui;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtANGLE;D:\Qt\Qt5.6.0\5.6\msvc2013\include\QtCore;debug;.;D:\Qt\Qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;GLOBAL_LIBRARY;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Guid.lib;D:\Qt\Qt5.6.0\5.6\msvc2013\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.6.0\5.6\msvc2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\Globald.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;GLOBAL_LIBRARY;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="JsonConfig.cpp" />
+    <ClCompile Include="algorithm.cpp" />
+    <ClCompile Include="checkablecombobox.cpp" />
+    <ClCompile Include="checkboxheaderview.cpp" />
+    <ClCompile Include="checkboxheaderviewex.cpp" />
+    <ClCompile Include="checkboxtablewidget.cpp" />
+    <ClCompile Include="filterwidget.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="highprecisiontimer.cpp" />
+    <ClCompile Include="iniconfig.cpp" />
+    <ClCompile Include="nmcomplexbutton.cpp" />
+    <ClCompile Include="QextSerialPort\qextserialbase.cpp" />
+    <ClCompile Include="QextSerialPort\qextserialport.cpp" />
+    <ClCompile Include="QextSerialPort\qextserialportrecvthread.cpp" />
+    <ClCompile Include="runlog.cpp" />
+    <ClCompile Include="runlogquerydialog.cpp" />
+    <ClCompile Include="runlogtablemodel.cpp" />
+    <ClCompile Include="sysconfig.cpp" />
+    <ClCompile Include="QextSerialPort\win_qextserialport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JsonConfig.h" />
+    <ClInclude Include="algorithm.h" />
+    <CustomBuild Include="checkablecombobox.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">checkablecombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkablecombobox.h -o release\moc_checkablecombobox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC checkablecombobox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_checkablecombobox.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">checkablecombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkablecombobox.h -o debug\moc_checkablecombobox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC checkablecombobox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_checkablecombobox.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="checkboxheaderview.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">checkboxheaderview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxheaderview.h -o release\moc_checkboxheaderview.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC checkboxheaderview.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_checkboxheaderview.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">checkboxheaderview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxheaderview.h -o debug\moc_checkboxheaderview.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC checkboxheaderview.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_checkboxheaderview.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="checkboxheaderviewex.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">checkboxheaderviewex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxheaderviewex.h -o release\moc_checkboxheaderviewex.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC checkboxheaderviewex.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_checkboxheaderviewex.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">checkboxheaderviewex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxheaderviewex.h -o debug\moc_checkboxheaderviewex.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC checkboxheaderviewex.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_checkboxheaderviewex.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="checkboxtablewidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">checkboxtablewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxtablewidget.h -o release\moc_checkboxtablewidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC checkboxtablewidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_checkboxtablewidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">checkboxtablewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore checkboxtablewidget.h -o debug\moc_checkboxtablewidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC checkboxtablewidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_checkboxtablewidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="filterwidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">filterwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore filterwidget.h -o release\moc_filterwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC filterwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_filterwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">filterwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore filterwidget.h -o debug\moc_filterwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC filterwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_filterwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="global.h" />
+    <ClInclude Include="global_global.h" />
+    <ClInclude Include="highprecisiontimer.h" />
+    <ClInclude Include="iniconfig.h" />
+    <CustomBuild Include="nmcomplexbutton.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">nmcomplexbutton.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore nmcomplexbutton.h -o release\moc_nmcomplexbutton.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC nmcomplexbutton.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_nmcomplexbutton.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">nmcomplexbutton.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore nmcomplexbutton.h -o debug\moc_nmcomplexbutton.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC nmcomplexbutton.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_nmcomplexbutton.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="QextSerialPort\qextserialbase.h" />
+    <CustomBuild Include="QextSerialPort\qextserialport.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">QextSerialPort\qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore QextSerialPort\qextserialport.h -o release\moc_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC QextSerialPort/qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_qextserialport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">QextSerialPort\qextserialport.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore QextSerialPort\qextserialport.h -o debug\moc_qextserialport.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC QextSerialPort/qextserialport.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_qextserialport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QextSerialPort\qextserialportrecvthread.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">QextSerialPort\qextserialportrecvthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore QextSerialPort\qextserialportrecvthread.h -o release\moc_qextserialportrecvthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC QextSerialPort/qextserialportrecvthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_qextserialportrecvthread.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">QextSerialPort\qextserialportrecvthread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore QextSerialPort\qextserialportrecvthread.h -o debug\moc_qextserialportrecvthread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC QextSerialPort/qextserialportrecvthread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_qextserialportrecvthread.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="runlog.h" />
+    <CustomBuild Include="runlogquerydialog.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">runlogquerydialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore runlogquerydialog.h -o release\moc_runlogquerydialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC runlogquerydialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_runlogquerydialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">runlogquerydialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore runlogquerydialog.h -o debug\moc_runlogquerydialog.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC runlogquerydialog.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_runlogquerydialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="runlogtablemodel.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">runlogtablemodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore runlogtablemodel.h -o release\moc_runlogtablemodel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC runlogtablemodel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_runlogtablemodel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">runlogtablemodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\moc.exe  -DUNICODE -DWIN32 -DGLOBAL_LIBRARY -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -ID:/Qt/Qt5.6.0/5.6/msvc2013/mkspecs/win32-msvc2013 -IE:/NiMotion/IntegratedMotor/NimotionModbusIDE/Global -ID:/Qt/Qt5.6.0/5.6/msvc2013/include -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtWidgets -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtGui -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtANGLE -ID:/Qt/Qt5.6.0/5.6/msvc2013/include/QtCore runlogtablemodel.h -o debug\moc_runlogtablemodel.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC runlogtablemodel.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_runlogtablemodel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="sysconfig.h" />
+    <ClInclude Include="QextSerialPort\win_qextserialport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_checkablecombobox.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_checkablecombobox.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_checkboxheaderview.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_checkboxheaderview.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_checkboxheaderviewex.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_checkboxheaderviewex.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_checkboxtablewidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_checkboxtablewidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_filterwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_filterwidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_nmcomplexbutton.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_nmcomplexbutton.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qextserialport.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_qextserialportrecvthread.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_qextserialportrecvthread.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_runlogquerydialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_runlogquerydialog.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_runlogtablemodel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_runlogtablemodel.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_resource_global.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_resource_global.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_runlogquerydialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="runlogquerydialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">runlogquerydialog.ui;filterwidget.h;checkablecombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\uic.exe runlogquerydialog.ui -o ui_runlogquerydialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC runlogquerydialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_runlogquerydialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">runlogquerydialog.ui;filterwidget.h;checkablecombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\uic.exe runlogquerydialog.ui -o ui_runlogquerydialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC runlogquerydialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_runlogquerydialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin\BranchClosed.png" />
+    <None Include="Skin\BranchClosedHover.png" />
+    <None Include="Skin\BranchOpen.png" />
+    <None Include="Skin\BranchOpenHover.png" />
+    <None Include="Skin\down.png" />
+    <None Include="Skin\find.png" />
+    <None Include="Skin\off.png" />
+    <None Include="Skin\on.png" />
+    <CustomBuild Include="resource_global.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">resource_global.qrc;Skin\BranchClosedHover.png;Skin\down.png;Skin\BranchOpen.png;Skin\on.png;Skin\BranchOpenHover.png;Skin\off.png;Skin\BranchClosed.png;Skin\find.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\rcc.exe -name resource_global resource_global.qrc -o release\qrc_resource_global.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC resource_global.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_resource_global.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">resource_global.qrc;Skin\BranchClosedHover.png;Skin\down.png;Skin\BranchOpen.png;Skin\on.png;Skin\BranchOpenHover.png;Skin\off.png;Skin\BranchClosed.png;Skin\find.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">D:\Qt\Qt5.6.0\5.6\msvc2013\bin\rcc.exe -name resource_global resource_global.qrc -o debug\qrc_resource_global.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC resource_global.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_resource_global.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
