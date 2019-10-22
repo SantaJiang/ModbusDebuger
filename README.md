@@ -1,5 +1,5 @@
 # 简介
-* 这是一款采用Qt5开发的Modbus协议串口调试软件，主要用途是与Modbus主站进行通信、串口调试等，软件代码已简化。
+* 这是一款采用Qt5开发的Modbus协议串口调试软件，主要用途是与Modbus主站进行通信、串口调试等，兼容232、485串口连接。软件代码已简化。
 ### 软件截图：
 ![image](https://github.com/SantaJiang/ModbusDebuger/blob/master/Image/Debugger.png)
 ### 运行效果：
