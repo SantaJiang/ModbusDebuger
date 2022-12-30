@@ -1,6 +1,7 @@
 ﻿#ifndef HIGHPRECISIONTIMER_H
 #define HIGHPRECISIONTIMER_H
 
+#include <Windows.h>
 
 class HighPrecisionTimer
 {

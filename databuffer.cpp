@@ -1,6 +1,7 @@
 ﻿#include "databuffer.h"
 #include "./Global/global.h"
 #include <QDateTime>
+#include <QMutex>
 
 DataBuffer::DataBuffer(QObject* parent): QObject(parent)
 {
